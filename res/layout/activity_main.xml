@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Centered TextView -->
+    <TextView
+        android:id="@+id/hello_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_msg"
+        android:textSize="35sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" 
+        android:typeface="monospace" />
+
+    <!-- Spacer to ensure that buttons and input fields are at the bottom -->
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Buttons positioned above EditText fields -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:onClick="StartFun"
+            android:textSize="25sp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/ResetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:onClick="ResetFun"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <!-- EditText fields aligned at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/Duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Minuti"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/Bell1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Allert 1"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:id="@+id/Bell2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Allert 2"
+            android:inputType="number"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
