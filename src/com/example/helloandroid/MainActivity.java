@@ -73,13 +73,13 @@ public class MainActivity extends Activity {
 				inputText = Bell1Input.getText().toString();
 				if (!inputText.isEmpty())
 				{
-					timeBell1=60*Integer.parseInt(inputText);
+					timeBell1=timeStart-60*Integer.parseInt(inputText);
 				}
 				
 				inputText = Bell2Input.getText().toString();
 				if (!inputText.isEmpty())
 				{
-					timeBell2=60*Integer.parseInt(inputText);
+					timeBell2=timeStart-60*Integer.parseInt(inputText);
 				}
 
 
